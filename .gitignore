@@ -1,71 +1,156 @@
-# 리소스 / 메모
-resource
-resouce
-memo
+# ============================
+# 리소스 / 메모 (로컬 전용)
+# ============================
+resource/
+resouce/
+memo/
 
-# 데이터셋
+# ============================
+# Task 폴더 (별도 업로드 예정)
+# ============================
+task/
+tasks/
+**/task/
+**/tasks/
+*task*.ipynb
+*_task.ipynb
+*_task_*.ipynb
+**/i_naive_bayes_task_강사.ipynb
+
+# ============================
+# 데이터셋 / 문서 / 결과물
+# ============================
 **/datasets/
 **/documents/
 **/outputs/
 **/web_documentation/
+**/output/
 
-# 모델/바이너리
+# ============================
+# 모델 / 바이너리
+# ============================
 *.pkl
+*.pickle
+*.joblib
 *.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
 *.h5
+*.hdf5
 *.pt
 *.pth
 *.ckpt
 *.bin
 *.safetensors
+*.onnx
+*.tflite
+*.pb
+*.exe
+*.msi
 
-# 이미지 폴더 (필요시 제거)
-**/images/
-
-# 환경/시크릿
+# ============================
+# 환경 변수 / 시크릿
+# ============================
 .env
 .env.*
+*.env
 *.key
 *.pem
 credentials.json
 service-account*.json
+*api_key*
+*API_KEY*
 
-# 가상환경
+# ============================
+# 가상환경 / 패키지
+# ============================
 venv/
 .venv/
 env/
 ENV/
+.venv/
+conda-meta/
 __pycache__/
 *.pyc
 *.pyo
+*.py[cod]
+*.egg
+*.egg-info/
+build/
+dist/
+.installed.cfg
 
-# Jupyter
+# ============================
+# Jupyter Notebook
+# ============================
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
+# ============================
 # IDE / OS
+# ============================
 .vscode/
 .idea/
+*.iml
 .DS_Store
 Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
 
-# 데이터 파일
+# ============================
+# 데이터 파일 (대용량)
+# ============================
 *.csv
 *.tsv
+*.xlsx
+*.xls
 *.parquet
+*.feather
 *.db
 *.sqlite
 *.sqlite3
 
-# 비디오/오디오/이미지 대용량
+# ============================
+# 미디어 (대용량)
+# ============================
 *.mp4
 *.avi
 *.mov
+*.mkv
 *.mp3
 *.wav
+*.flac
 
-# LLM 관련 추가
+# ============================
+# LLM / 벡터 DB 관련
+# ============================
 **/bideo-ai/
 **/recommend_server/
 **/prompt/
 contest_recommend_init.sql
 requirements*.txt
+.langchain.db
+chroma_db/
+faiss_index/
+vector_store/
+embeddings_cache/
+
+# ============================
+# 로그 / 임시 파일
+# ============================
+*.log
+*.tmp
+*.bak
+logs/
+tmp/
+temp/
+
+# ============================
+# 추출용 임시 파일
+# ============================
+clean_markdown.txt
+all_markdown.txt
